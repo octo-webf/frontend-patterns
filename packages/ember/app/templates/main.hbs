@@ -1,0 +1,13 @@
+<GithubRibbon></GithubRibbon>
+<div class="app-shell">
+  <div class="app-shell__container app-shell__container--small">
+    <NavLeft>
+      <ChallengeList @challenges={{model}}></ChallengeList>
+    </NavLeft>
+  </div>
+  <div class="app-shell__container">
+    <section class="challenge-main">
+      {{outlet}}
+    </section>
+  </div>
+</div>

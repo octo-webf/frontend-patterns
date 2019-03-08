@@ -1,0 +1,13 @@
+{
+  "name": "frontend-patterns",
+  "version": "1.0.0",
+  "description": "Later",
+  "main": "index.js",
+  "repository": "later",
+  "author": "later",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"]
+  }
+}

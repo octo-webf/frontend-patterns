@@ -1,0 +1,12 @@
+<FrontendChallenge
+  @title="Simple list"
+  @subtitle="This challenge displays a simple list to the user"
+>
+  <div class="simple-list">
+    {{#each model.people as |user|}}
+    <RowImgText @title={{user.name}} @subtitle={{user.jobTitle}} @imgUrl={{user.avatar}}
+                @imgDescription={{user.name}}></RowImgText>
+    {{/each}}
+  </div>
+</FrontendChallenge>
+

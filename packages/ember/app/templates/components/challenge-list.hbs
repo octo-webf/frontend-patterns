@@ -1,0 +1,7 @@
+{{#each challenges as |challenge|}}
+<ChallengeListItem
+  @route={{challenge.route}}
+  @label={{challenge.menuItemLabel}}
+  @getClicked={{action "doSomething"}}
+></ChallengeListItem>
+{{/each}}
