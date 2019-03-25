@@ -22,23 +22,6 @@
   }
 
 
-  &--active {
-    background: white;
-    a {
-      color: $deep-purple;
-    }
-    .navleft-list {
-      &__smooth-angle-top,
-      &__smooth-angle-bottom {
-        display: block;
-      }
-    }
-  }
-  &--active:hover {
-    opacity: 1;
-  }
-
-
   &__smooth-angle-top,
   &__smooth-angle-bottom {
     position: absolute;
@@ -63,5 +46,16 @@
     border-width: 0 300px 15px 0;
     border-color: transparent white transparent transparent;
 
+  }
+}
+
+.challenge-list-item--active {
+  background: white;
+  a {
+    color: $deep-purple;
+  }
+  .challenge-list-item__smooth-angle-top,
+  .challenge-list-item__smooth-angle-bottom {
+    display: block;
   }
 }
