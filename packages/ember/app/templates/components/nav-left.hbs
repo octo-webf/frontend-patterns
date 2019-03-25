@@ -1,5 +1,8 @@
 <nav class="navleft">
   <ul class="navleft__list">
-    {{yield}}
+    <ChallengeList
+      @challenges={{this.items}}
+      @navigateToItem={{action "navigateToItem"}}
+    ></ChallengeList>
   </ul>
 </nav>

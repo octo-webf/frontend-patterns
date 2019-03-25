@@ -1,7 +1,9 @@
 {{#each challenges as |challenge|}}
 <ChallengeListItem
+  @id={{challenge.id}}
   @route={{challenge.route}}
+  @isActive={{challenge.isActive}}
   @label={{challenge.menuItemLabel}}
-  @getClicked={{action "doSomething"}}
+  @handleClick={{action this.navigateToItem}}
 ></ChallengeListItem>
 {{/each}}
