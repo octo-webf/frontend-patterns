@@ -1,11 +1,11 @@
 import React from "react";
 
 export const Home = () => (
-  <div class="home">
-    <div class="home__title">
+  <div className="home">
+    <div className="home__title">
       <h1>Welcome FrontEnd Patterns (React)!</h1>
     </div>
-    <div class="home__subtitle">
+    <div className="home__subtitle">
       <p>
         This application tackles various front end challenges, some simple, some
         more complicated.
@@ -20,7 +20,7 @@ export const Home = () => (
       </p>
       <p>Don't copy/paste the code. Copy/paste the design.</p>
     </div>
-    <div class="home__tagline">
+    <div className="home__tagline">
       <h2>Happy Coding!</h2>
     </div>
   </div>

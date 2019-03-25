@@ -1,0 +1,28 @@
+.tabs {
+  display: flex;
+
+  &__tab {
+    flex: 1;
+    padding: 20px;
+
+    background: transparent;
+    border-bottom: 4px solid transparent;
+    outline: none;
+
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+  }
+
+  &__tab:focus {
+    background: rgba(0, 0, 126, 0.1);
+  }
+
+  &__tab:focus.tabs__tab--active,
+  &__tab--active {
+    background: transparent;
+    border-bottom: 4px solid rgba(0, 0, 126, 1);
+  }
+}

@@ -14,3 +14,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.app-shell__container--small {
+  background: #61b4fb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #61dafb,
+    #61b4fb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #61dafb,
+    #61b4fb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.challenge-list-item a {
+  color: hsl(193, 50%, 10%);
+}

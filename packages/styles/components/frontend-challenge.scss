@@ -1,8 +1,8 @@
 .challenge-shell {
-  padding: 100px 0 0 100px;
+  padding: 100px;
+  line-height: 1.6;
 
   &__part {
-
   }
 
   &__description {
@@ -16,7 +16,15 @@
   }
 
   &__subtitle {
-
   }
 
+  &__rules {
+    display: block;
+    padding: 20px 0;
+
+    li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+  }
 }
