@@ -1,5 +1,9 @@
 {
   "name": "fep-styles",
   "version": "1.0.0",
-  "main": "app.scss"
+  "main": "app.scss",
+  "scripts": {
+    "test": "echo 'skip tests'",
+    "build": "echo 'skip build'"
+  }
 }

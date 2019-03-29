@@ -7,6 +7,10 @@
   "author": "later",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "test": "yarn workspaces run test",
+    "build": "yarn workspaces run build"
+  },
   "workspaces": {
     "packages": [
       "packages/*"

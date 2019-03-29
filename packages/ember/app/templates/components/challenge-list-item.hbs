@@ -1,5 +1,5 @@
-<li class="challenge-list-item {{if this.isActive 'challenge-list-item--active'}}" {{action "onClick" this.id}}>
+<li class="challenge-list-item {{if this.isActive "challenge-list-item--active"}}" {{action "onClick" this.id}} role="button">
   <div class="challenge-list-item__smooth-angle-top"></div>
   <div class="challenge-list-item__smooth-angle-bottom"></div>
-    {{#link-to route }} {{label}} {{/link-to}}
+  {{#link-to route }} {{label}} {{/link-to}}
 </li>
