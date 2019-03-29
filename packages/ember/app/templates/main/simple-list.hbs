@@ -4,8 +4,11 @@
 >
   <div class="simple-list">
     {{#each model.people as |user|}}
-    <RowImgText @title={{user.name}} @subtitle={{user.jobTitle}} @imgUrl={{user.avatar}}
-                @imgDescription={{user.name}}></RowImgText>
+      <RowImgText
+        @title={{user.name}}
+        @subtitle={{user.jobTitle}}
+        @imgUrl={{user.avatar}}
+        @imgDescription={{user.name}}></RowImgText>
     {{/each}}
   </div>
 </FrontendChallenge>
