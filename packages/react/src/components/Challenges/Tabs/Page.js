@@ -67,8 +67,20 @@ export const TabsPage = () => {
       <div className="challenge-shell__part challenge-tabs">
         <Tabs>
           <Tab {...getTabProps("norway")}>Norway</Tab>
-          <Tab {...getTabProps("australia")}>Australia</Tab>
-          <Tab {...getTabProps("japan")}>Japan</Tab>
+          <Tab
+            {...getTabProps("australia", {
+              style: { fontWeight: "bold" }
+            })}
+          >
+            Australia
+          </Tab>
+          <Tab
+            {...getTabProps("japan", {
+              onClick: e => console.log("ClickEvent:", e)
+            })}
+          >
+            Japan
+          </Tab>
         </Tabs>
         <div className="tab-content">{getContent()}</div>
       </div>
