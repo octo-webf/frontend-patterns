@@ -65,7 +65,7 @@ describe("when hitting ENTER key", () => {
     const firstTab = wrapper.find(Tab).at(0);
 
     // When
-    firstTab.simulate("keyup", { keyCode: 13 });
+    firstTab.simulate("keydown", { keyCode: 13 });
 
     // Then
     expect(
@@ -83,7 +83,7 @@ describe("when hitting the SPACE key", () => {
     const firstTab = wrapper.find(Tab).at(0);
 
     // When
-    firstTab.simulate("keyup", { keyCode: 32 });
+    firstTab.simulate("keydown", { keyCode: 32 });
 
     // Then
     expect(
@@ -101,7 +101,7 @@ describe("when hitting any other key", () => {
     const firstTab = wrapper.find(Tab).at(0);
 
     // When
-    firstTab.simulate("keyup", { keyCode: 2 });
+    firstTab.simulate("keydown", { keyCode: 2 });
 
     // Then
     expect(

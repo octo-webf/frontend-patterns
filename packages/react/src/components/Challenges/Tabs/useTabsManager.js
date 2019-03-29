@@ -10,8 +10,12 @@ export function useTabsManager({ initialTab, tabsContent }) {
     getTabProps: tab => ({
       isActive: tab === activeTab,
       onClick: () => setActiveTab(tab),
-      onKeyUp: e => {
+      onKeyDown: e => {
         const keyCode = e.keyCode || e.which;
+
+        if (keyCode === SPACE_KEY_CODE) {
+          e.preventDefault();
+        }
 
         if (keyCode === ENTER_KEY_CODE || keyCode === SPACE_KEY_CODE) {
           setActiveTab(tab);
